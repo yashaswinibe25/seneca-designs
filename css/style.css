@@ -1,0 +1,56 @@
+body {
+  position: relative;
+  font-size: 1.6em;
+}
+a {
+  color: darkslateblue;
+}
+/*Variables*/
+/*Mixins*/
+.line-seperation {
+  width: 200px;
+  height: 5px;
+  background-color: #35AA90;
+}
+/*Functions*/
+/*-------------------------------------*/
+.about-section h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.about-section .line {
+  width: 200px;
+  height: 5px;
+  background-color: #35AA90;
+}
+.about-section h3 {
+  text-transform: uppercase;
+}
+.about-section img:hover {
+  color: black;
+  opacity: 0.6;
+  box-shadow: 5px 5px 5px 5px #140F26;
+}
+.about-section2 .line {
+  width: 200px;
+  height: 5px;
+  background-color: #35AA90;
+  margin-bottom: 2%;
+}
+.about-section2 a {
+  font-size: 1.4em;
+  margin-left: 45%;
+}
+footer {
+  height: 80px;
+  background: #d7d5d5;
+  margin-top: 2%;
+}
+footer p {
+  text-align: center;
+}
+/*---------------------------------Bootstrap modifications----------------------------*/
+.container {
+  width: 960px;
+  margin: auto;
+}

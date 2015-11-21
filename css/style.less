@@ -1,0 +1,88 @@
+body
+{    
+ position:relative;
+	font-size:1.6em;
+}
+a
+{
+ color:darkslateblue;
+}
+/*Variables*/
+@bcolor:black;
+@transparency:0.6;
+@img-shadow:5px 5px 5px 5px #140F26;
+
+/*Mixins*/
+.line-seperation
+{
+  	width:200px;
+	height:5px;
+	background-color:#35AA90; 
+	
+}
+/*Functions*/
+.change
+{
+@height:80px;
+}
+@bgcolor:#D6D6D6;
+
+/*-------------------------------------*/
+.about-section
+{
+	h2
+	{
+	  font-size:2em;
+		text-transform:uppercase;
+	}
+	.line
+	{
+	  .line-seperation;  	
+	}
+	h3
+	{
+	 text-transform:uppercase;
+		
+	}
+	img:hover
+	{
+	 color:@bcolor;
+		opacity:@transparency;
+		box-shadow:@img-shadow;		
+	}
+}
+.about-section2
+{
+	.line
+	{
+		.line-seperation;
+		margin-bottom:2%;
+	}
+	a
+	{
+	  font-size:1.4em;
+		margin-left:45%;
+		
+	}
+	
+}
+footer
+{
+	.change();
+  height:@height;
+	background:saturate(@bgcolor,2%);
+	margin-top:2%;
+	p
+	{
+	  text-align:center;
+	}
+}
+	
+
+/*---------------------------------Bootstrap modifications----------------------------*/
+
+.container
+{
+   width:960px; 
+    margin:auto;
+}
